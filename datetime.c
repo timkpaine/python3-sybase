@@ -516,7 +516,7 @@ int copy_reg_datetime(PyObject *dict)
 	*pickler = NULL,
 	*obj = NULL;
 
-    module = PyImport_ImportModule("copy_reg");
+    module = PyImport_ImportModule("copyreg");
     if (module == NULL)
 	goto error;
     if ((pickle_func = PyObject_GetAttrString(module, "pickle")) == NULL)
